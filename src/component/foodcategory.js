@@ -5,10 +5,10 @@ import { IMAGE_SIZE } from "../data/constant";
 import grocery from "../data/groceries";
 export default function Foodcategory(){
     return (
-        <div>
+        <div  className="px-20">
             <div>
-            <h2 className="flex justify-center text-4xl font-bold py-8">Our Best Food Option</h2>
-            <div className="  grid grid-rows-2 grid-flow-col gap-10 overflow-x-auto"> 
+            <h2 className="flex justify-start text-3xl font-bold py-8 px-2">Our Best Food Option</h2>
+            <div className="  grid grid-rows-2 grid-flow-col gap-10 overflow-x-auto scrollbar-hide"> 
                 {
                     FoodCategories.map(items=>( 
                         <FoodCategoryCard
@@ -24,8 +24,8 @@ export default function Foodcategory(){
             </div>
             </div>
             <div>
-                  <h2 className="flex justify-center text-4xl font-bold py-8">Shop Grocery on InstaMart</h2>
-                   <div className="  grid grid-rows-1 grid-flow-col gap-10 overflow-x-auto"> 
+                  <h2 className="flex justify-start text-3xl font-bold py-8 px-2">Shop Grocery on InstaMart</h2>
+                   <div className="  grid grid-rows-1 grid-flow-col gap-10 overflow-x-auto scrollbar-hide"> 
                             {
 
                             grocery.map(items=>( 
