@@ -1,12 +1,13 @@
 import reactDOM from "react-dom/client";
 import Header from "./component/header";
-
+import Foodcategory from "./component/foodcategory";
 // Header
 
 function App(){
-    return (
+    return (<>
         <Header/>
-        
+        <Foodcategory/>
+        </>
     )
 
 }
