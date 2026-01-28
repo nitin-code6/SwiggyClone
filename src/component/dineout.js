@@ -9,7 +9,7 @@ export default function Dineout(){
           <div className="flex flex-nowrap overflow-x-auto gap-10">
           {
             dineout_restaurant.map((dine_data)=>
-            <DineCard key={dine_data?.info?.id} info={dine_data?.info}></DineCard>)
+            <DineCard key={dine_data?.info?.id} info={dine_data?.info} cta={dine_data?.cta}></DineCard>)
           }
 
           </div>
