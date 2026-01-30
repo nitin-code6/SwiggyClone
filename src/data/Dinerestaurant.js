@@ -251,7 +251,7 @@
                                                                 "distanceString": "0 km",
                                                                 "city": {
                                                                     "name": "Noida 1"
-                                                                },
+                                                           },
                                                                 "formattedAddress": "Sector 44, Noida 1"
                                                             },
                                                             "offerInfoV2": {
@@ -2164,4 +2164,5 @@
                                                             "type": "DEEPLINK"
                                                         }
                                                     }];
+                                        
                                                 export default dineout_restaurant; 

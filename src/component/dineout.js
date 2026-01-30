@@ -3,6 +3,7 @@ import dineout_restaurant from "../data/Dinerestaurant";
 
 import DineCard from "./Dinecard";
 export default function Dineout(){
+  
     return(
         <div className="px-20">
           <h2 className="flex justify-start text-3xl font-bold py-8 px-2">Discover best restaurant on Dineout</h2>
