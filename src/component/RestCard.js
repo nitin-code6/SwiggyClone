@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 export default function RestCard({restInfo}){
-
+        
     return (
-      <Link to={"/city/delhi/ "+ restInfo?.info?.id}>
-        <div className="p-4 w-[280px] transform transition duration-300 hover:scale-105">
+      <Link to={"/city/delhi/16866"}>
+        <div className="p-4 w-70 transform transition duration-300 hover:scale-105">
 
          <div className="relative aspect-[4/3]">
          <img src={"https://media-assets.swiggy.com/swiggy/image/upload/"+restInfo.info.cloudinaryImageId} className="w-full h-full  object-cover rounded-2xl"></img>
