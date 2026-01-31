@@ -14,9 +14,9 @@ export default function RestaurantMenu(){
         async function fetchData() {
           //  console.log(FoodItems[5].groupedCard);
           //  console.log(FoodItems?.[5]?.groupedCard?.cardGroupMap)
-          const item =FoodItems?.[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[2]?.card?.card?.itemCards;
-        // console.log(item);
-           setRestData(item);
+          const temp_data =FoodItems?.[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+          const filter_data=temp_data.filter((items)=>'title' in items?.card?.card);
+           setRestData(filter_data);
         }
    
         fetchData();
@@ -27,10 +27,10 @@ export default function RestaurantMenu(){
           
    
     return(
-        <div className="flex flex-wrap w-[80%] mx-auto mt-10 justify-center gap-6">
+        <div className="w-[80%] mx-auto mt-10 gap-6">
           {
             // <h1>{RestData?.[0]?.card.info.id}</h1> working well
-            RestData.map((menuItems)=><MenuCard key={menuItems?.card?.info?.id} menuItems={menuItems}></MenuCard>)
+            RestData.map((menuItems)=><MenuCard key={menuItems?.card?.card?.title} menuItems={menuItems?.card?.card}></MenuCard>)
           }
         </div>
         
