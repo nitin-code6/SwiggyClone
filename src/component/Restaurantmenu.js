@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FoodItems from "../data/restfoods/16866";
 import MenuCard from "./MenuCard";
-
+import { Link } from "react-router-dom";
 
 export default function RestaurantMenu(){
    
@@ -31,8 +31,14 @@ export default function RestaurantMenu(){
           
    
     return(
+
        <div> 
-        <div className="w-[50%] mx-50 mt-20 mb-20 ">
+        <Link to={"/city/delhi/16866/search"}>
+        <div className="w-[50%] mx-auto mt-20 mb-20 h-10 bg-gray-100 rounded-2xl flex items-center justify-center">
+          <p className="text-center ">Search For Dishes</p>
+        </div>
+        </Link>
+        <div className="w-[50%] mx-auto mt-15 mb-15 ">
         <button className={`text-2xl py-2 px-4 mb-20 border-2 rounded-2xl mr-2 ${selected==="veg"?"bg-green-400":"bg-gray-300"}` }  onClick={()=>setSelected(selected==='veg'?null:'veg')}>Veg</button>
           <button className={`text-2xl py-2 px-4 mb-20 border-2 rounded-2xl ${selected==="nonveg"?"bg-red-400":"bg-gray-300"}`}onClick={()=>setSelected(selected==='nonveg'?null:'nonveg')}>Non Veg</button>
        </div>
