@@ -14,14 +14,14 @@ export default function RestInfo({items}){
    
     return (
         <div className="flex justify-between items-start py-6 border-b ">
-            <div className="w-[65%]">
+            <div className="w-[70%]">
          <p className="text-sm text-gray-500 font-semibold">{items?.card?.info?.category}</p>
             {icon}
         <div>
         <p className="text-lg font-bold">{items?.card?.info?.name}</p>
         <p className="font-semibold mt-1">₹{(items?.card?.info?.finalPrice ?? items?.card?.info?.defaultPrice ?? items?.card?.info?.price)/100}</p>
         {/* <p>{items?.card?.info?.}</p> */}
-        <p className="text-sm text-gray-600 mt-2 line-clamp-3">{items?.card?.info?.description}</p>
+        <p className="text-sm text-gray-600 mt-2 ">{items?.card?.info?.description}</p>
         </div>
         </div>
         <div className="relative  w-[150px]">
